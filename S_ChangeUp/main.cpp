@@ -1,5 +1,6 @@
 #include "main.h"
 /*
+
 Port     Desc
 1
 2
@@ -22,9 +23,22 @@ Port     Desc
 19
 20
 
-Red - High Torque
-Blue - High Speed
+Current Team Goals:
+1.
+2.
+3.
+
+How do I drive this robot?
+
+
+What does autonomous do?
+
+
+
 */
+
+
+
 void initialize() {
 	pros::lcd::initialize();
 	pros::lcd::set_text(1, "Hello PROS User!");
