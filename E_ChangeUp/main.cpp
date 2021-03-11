@@ -192,12 +192,12 @@ if(selector::auton == 1){ //left side one goal
 	pros::delay(1000);
 	spinny.moveVelocity(0);
 	myBaseDrive->moveDistance (-34_in);
-	myBaseDrive->turnAngle(-135_deg);
-	myBaseDrive->moveDistance (20.5_in);
-	myLift.moveVelocity(0);
+	//myBaseDrive->turnAngle(-135_deg);
+	//myBaseDrive->moveDistance (20.5_in);
+	//myLift.moveVelocity(0);
 }
 
-if(selector::auton == 2){ //left side one goal
+if(selector::auton == 2){ //left side two goals
 	// duo auton
 	myBaseDrive->setMaxVelocity(150);
 	pros::delay(1000);
@@ -219,7 +219,29 @@ if(selector::auton == 2){ //left side one goal
 	myLift.moveVelocity(0);
 }
 
-if(selector::auton == 0){
+if(selector::auton == -1){ //left side one goal
+	// duo auton
+	myBaseDrive->setMaxVelocity(150);
+	pros::delay(1000);
+	myBaseDrive->moveDistance (24_in);
+	pros::delay(500);
+	myBaseDrive->turnAngle(155_deg);
+	pros::delay(500);
+	myBaseDrive->moveDistance (15_in);
+	myLift.moveVelocity(200);
+	pros::delay(1000);
+	pros::delay(1000);
+	myBaseDrive->moveDistance (6.5_in);
+	spinny.moveVelocity(200);
+	pros::delay(1000);
+	spinny.moveVelocity(0);
+	myBaseDrive->moveDistance (-34_in);
+	//myBaseDrive->turnAngle(-135_deg);
+	//myBaseDrive->moveDistance (20.5_in);
+	//myLift.moveVelocity(0);
+}
+
+if(selector::auton == 0){ //
 myBaseDrive->setMaxVelocity(150);
 //up
 myLift.moveVelocity(200);
