@@ -4,7 +4,13 @@ All code used for the Firebirds VEX robots. Also included in this repo will be r
 # Using Auton Selector
 1. Copy the code from the AutonSelector.c file, and paste it in your main.ccp file directly below the first line, include('main.h').
 
-2. To use, the buttons, set up different auton code in IF statements inside the autonomous() {} function. For example:
+2. Add this line to your initialize function:
+
+    void initialize() {
+	    selector::init(HUE, DEFAULT, selector::b);
+    }
+
+3. To use, the buttons, set up different auton code in IF statements inside the autonomous() {} function. For example:
 
     - selector::auton == 1 : Red Front
     - selector::auton == 2 : Red Back
