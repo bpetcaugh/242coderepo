@@ -140,9 +140,9 @@ void init(int hue, int default_auton, const char **autons){
 /*
 -------Motor Parts-------
 Port Desc    Port   Desc
-1            11
+1 leftspin   11
 2 leftdrive  12
-3 leftspin   13
+3            13
 4  rightspin 12
 5            15
 6 				   16
