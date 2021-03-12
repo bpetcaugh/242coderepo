@@ -239,7 +239,7 @@ std::shared_ptr<ChassisController> drive =
 
 //drive->moveDistance(4.25_in);
 
-if(selector::auton == 0){ //skills auton
+if(selector::auton == 1){ //skills auton
 
 autoArmRaiseLower(1700, 'r');
 
@@ -258,6 +258,26 @@ drive->moveDistance(-8_in);
 autoArmRaiseLower(1000, 'l');
 
 drive->turnAngle(170_deg);
+}
+
+if(selector::auton == -1){
+	autoArmRaiseLower(1700, 'r');
+
+	drive->moveDistance(9.5_in);
+
+	autoArmRaiseLower(500, 'r');
+
+	drive->turnAngle(-10_deg);
+
+	drive->moveDistance(2_in);
+
+	autoSpinnerInOut(2000, 'o');
+
+	drive->moveDistance(-8_in);
+
+	autoArmRaiseLower(1000, 'l');
+
+	drive->turnAngle(-170_deg);
 }
 
 // drive->moveDistance();
